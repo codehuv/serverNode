@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Upload</title>
+</head>
+<body>
+    <h1>Upload File</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="file">File:</label>
+            <input type="file" id="file" name="file" required>
+        </div>
+        <div>
+            <label for="metadata">Metadata (JSON format):</label>
+            <input type="text" id="metadata" name="metadata" placeholder='{"key": "value"}'>
+        </div>
+        <div>
+            <button type="submit">Upload</button>
+        </div>
+    </form>
+</body>
+</html>
